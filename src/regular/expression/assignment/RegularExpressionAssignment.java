@@ -15,7 +15,13 @@ public class RegularExpressionAssignment {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        String input = "2342342344";
+        String regex = "[0-9]+";
+        
+        boolean isValid = input.matches(regex);
+        
+        System.out.println(isValid);
     }
     
 }
