@@ -21,9 +21,9 @@ public class RegularExpressionAssignment {
      */
     public static void main(String[] args) {
         
-        RE_for_integer_constant.integer_RE();
+//        RE_for_integer_constant.integer_RE();
         RE_for_email_validation.email_RE();
-        RE_for_url.url_RE();
+//        RE_for_url.url_RE();
     }
     
     public static class RE_for_integer_constant {
@@ -56,7 +56,7 @@ public class RegularExpressionAssignment {
         System.out.print("Enter valid email address: ");
         
         String input = sc.nextLine();
-        String regex = "^(.+)@(.+)$";
+        String regex = "^[a-z0-9.]+@[a-z.]{1,10}$";
         
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(input);
