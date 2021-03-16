@@ -56,7 +56,7 @@ public class RegularExpressionAssignment {
         System.out.print("Enter valid email address: ");
         
         String input = sc.nextLine();
-        String regex = "^[a-z0-9.]+@[a-z.]{1,10}$";
+        String regex = "^[a-z0-9.]+[@][a-z.]+{1,15}$";
         
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(input);
@@ -79,7 +79,7 @@ public class RegularExpressionAssignment {
         System.out.print("Enter valid url: ");
         
         String input = sc.nextLine();
-        String regex = "";
+        String regex = "^[a-z0-9]+[.][a-z]{1,5}$";
         
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(input);
